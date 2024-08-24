@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">Поваренная книга</string>
+    <string name="saved_recipes_text">Сохраненные рецепты</string>
+    <string name="no_recipes_text">Не удалось найти сохраненные рецепты на вашем устройстве. Создайте новый рецепт или скачайте его из базы данных рецептов (требуется вход в профиль).</string>
+    <string name="add_new_recipe_desc">Add new recipe</string>
+    <string name="what_will_be_on_a_dinner_menu_option_text">Что на ужин?</string>
+    <string name="profile_menu_option_text">Профиль</string>
+    <string name="settings_menu_option_text">Настройки</string>
+    <string name="recipe_list_menu_option_text">Сохраненные рецепты</string>
+    <string name="saved_dinners_text">Варианты ужина</string>
+    <string name="no_dinners_text">На вашем устройстве пока не сохранено ни одного варианта ужина.</string>
+    <string name="add_new_dinner_desc">Добавить новый ужин</string>
+    <string name="dinner_name_text">Название ужина</string>
+    <string name="dinner_list_error">Ошибка при чтении варианта ужина.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="edit_dinner_text">Редактирование ужина</string>
+    <string name="dinner_name_hint">Название ужина</string>
+    <string name="edit_dinner_save_text">Сохранить</string>
+    <string name="edit_dinner_cancel_text">Отмена</string>
+    <string name="edit_dinner_hint">Инструкция:\n- Введите название вашего варианта ужина в поле \"Название ужина\";\n- При желании добавьте фото этого варианта, нажав на изображение под полем;\n- Сохраните изменения.</string>
+    <string name="image_set_error">Ошибка при загрузке изображения</string>
+    <string name="dinner_category_text">Категория ужинов</string>
+    <string name="dinner_category_hint">Категория (по желанию)</string>
 </resources>

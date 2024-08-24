@@ -1,7 +1,50 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.ПовареннаяКнига" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+<resources>
+    <style name="KitchenRecipes.RedTheme" parent="Theme.Material3.Dark">
+        <item name="colorPrimary">@color/material_theme_red_primary</item>
+        <item name="colorOnPrimary">@color/material_theme_red_onPrimary</item>
+        <item name="colorPrimaryContainer">@color/material_theme_red_primaryContainer</item>
+        <item name="colorOnPrimaryContainer">@color/material_theme_red_onPrimaryContainer</item>
+        <item name="colorSecondary">@color/material_theme_red_secondary</item>
+        <item name="colorOnSecondary">@color/material_theme_red_onSecondary</item>
+        <item name="colorSecondaryContainer">@color/material_theme_red_secondaryContainer</item>
+        <item name="colorOnSecondaryContainer">@color/material_theme_red_onSecondaryContainer</item>
+        <item name="colorTertiary">@color/material_theme_red_tertiary</item>
+        <item name="colorOnTertiary">@color/material_theme_red_onTertiary</item>
+        <item name="colorTertiaryContainer">@color/material_theme_red_tertiaryContainer</item>
+        <item name="colorOnTertiaryContainer">@color/material_theme_red_onTertiaryContainer</item>
+        <item name="colorError">@color/material_theme_red_error</item>
+        <item name="colorOnError">@color/material_theme_red_onError</item>
+        <item name="colorErrorContainer">@color/material_theme_red_errorContainer</item>
+        <item name="colorOnErrorContainer">@color/material_theme_red_onErrorContainer</item>
+        <item name="android:colorBackground">@color/material_theme_red_background</item>
+        <item name="colorOnBackground">@color/material_theme_red_onBackground</item>
+        <item name="colorSurface">@color/material_theme_red_surface</item>
+        <item name="colorOnSurface">@color/material_theme_red_onSurface</item>
+        <item name="colorSurfaceVariant">@color/material_theme_red_surfaceVariant</item>
+        <item name="colorOnSurfaceVariant">@color/material_theme_red_onSurfaceVariant</item>
+        <item name="colorOutline">@color/material_theme_red_outline</item>
+        <item name="colorOutlineVariant">@color/material_theme_red_outlineVariant</item>
+        <item name="colorSurfaceInverse">@color/material_theme_red_inverseSurface</item>
+        <item name="colorOnSurfaceInverse">@color/material_theme_red_inverseOnSurface</item>
+        <item name="colorPrimaryInverse">@color/material_theme_red_inversePrimary</item>
+        <item name="colorPrimaryFixed">@color/material_theme_red_primaryFixed</item>
+        <item name="colorOnPrimaryFixed">@color/material_theme_red_onPrimaryFixed</item>
+        <item name="colorPrimaryFixedDim">@color/material_theme_red_primaryFixedDim</item>
+        <item name="colorOnPrimaryFixedVariant">@color/material_theme_red_onPrimaryFixedVariant</item>
+        <item name="colorSecondaryFixed">@color/material_theme_red_secondaryFixed</item>
+        <item name="colorOnSecondaryFixed">@color/material_theme_red_onSecondaryFixed</item>
+        <item name="colorSecondaryFixedDim">@color/material_theme_red_secondaryFixedDim</item>
+        <item name="colorOnSecondaryFixedVariant">@color/material_theme_red_onSecondaryFixedVariant</item>
+        <item name="colorTertiaryFixed">@color/material_theme_red_tertiaryFixed</item>
+        <item name="colorOnTertiaryFixed">@color/material_theme_red_onTertiaryFixed</item>
+        <item name="colorTertiaryFixedDim">@color/material_theme_red_tertiaryFixedDim</item>
+        <item name="colorOnTertiaryFixedVariant">@color/material_theme_red_onTertiaryFixedVariant</item>
+        <item name="colorSurfaceDim">@color/material_theme_red_surfaceDim</item>
+        <item name="colorSurfaceBright">@color/material_theme_red_surfaceBright</item>
+        <item name="colorSurfaceContainerLowest">@color/material_theme_red_surfaceContainerLowest</item>
+        <item name="colorSurfaceContainerLow">@color/material_theme_red_surfaceContainerLow</item>
+        <item name="colorSurfaceContainer">@color/material_theme_red_surfaceContainer</item>
+        <item name="colorSurfaceContainerHigh">@color/material_theme_red_surfaceContainerHigh</item>
+        <item name="colorSurfaceContainerHighest">@color/material_theme_red_surfaceContainerHighest</item>
     </style>
 </resources>

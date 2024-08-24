@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DinnerListFragment">
+
+    <LinearLayout
+        android:id="@+id/dinnerListLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <TextView
+            android:layout_width="312dp"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:text="@string/saved_dinners_text">
+
+        </TextView>
+        <ExpandableListView
+            android:id="@+id/dinnerList"
+            android:layout_width="312dp"
+            android:layout_height="wrap_content"
+            android:indicatorStart="?android:attr/expandableListPreferredItemIndicatorLeft"
+            android:divider="@color/material_theme_red_primary"
+            android:dividerHeight="1dp">
+
+        </ExpandableListView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/dinnersNotFoundLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/dinnersNotFoundReason"
+            android:layout_width="312dp"
+            android:layout_height="wrap_content"
+            android:text="@string/no_dinners_text"
+            android:textAlignment="center">
+
+        </TextView>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addDinnerFAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:contentDescription="@string/add_new_dinner_desc"
+        android:src="@android:drawable/ic_menu_edit"
+        app:backgroundTint="#FFCDD2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

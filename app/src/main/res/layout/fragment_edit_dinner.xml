@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context=".EditDinnerFragment">
+
+    <TextView
+        android:layout_width="312dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/edit_dinner_text"
+        android:textSize="22sp">
+
+    </TextView>
+    <EditText
+        android:id="@+id/dinnerCategoryEditText"
+        android:inputType="text"
+        android:hint="@string/dinner_category_hint"
+        android:layout_width="312dp"
+        android:layout_height="wrap_content">
+
+    </EditText>
+    <EditText
+        android:id="@+id/dinnerNameEditText"
+        android:inputType="text"
+        android:hint="@string/dinner_name_hint"
+        android:layout_width="312dp"
+        android:layout_height="wrap_content">
+
+    </EditText>
+    <ImageView
+        android:src="@drawable/image_placeholder"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/dinnerImageView">
+
+    </ImageView>
+
+    <LinearLayout
+        android:id="@+id/editDinnerControlLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal">
+        <Button
+            android:layout_marginEnd="10dp"
+            android:id="@+id/dinnerSaveBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_dinner_save_text">
+
+        </Button>
+        <Button
+            android:layout_marginEnd="10dp"
+            android:id="@+id/dinnerCancelBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_dinner_cancel_text">
+
+        </Button>
+        <Button
+            android:id="@+id/dinnerDeleteBtn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@android:drawable/ic_menu_delete">
+
+        </Button>
+    </LinearLayout>
+    <TextView
+        android:layout_width="312dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:text="@string/edit_dinner_hint"
+        android:textSize="14sp">
+
+    </TextView>
+</LinearLayout>

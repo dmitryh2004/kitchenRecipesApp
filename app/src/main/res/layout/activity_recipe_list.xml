@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RecipeListActivity">
+    <LinearLayout
+        android:id="@+id/recipeListLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <TextView
+            android:layout_width="312dp"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:text="@string/saved_recipes_text">
+
+        </TextView>
+        <ListView
+            android:id="@+id/recipeList"
+            android:layout_width="312dp"
+            android:layout_height="wrap_content">
+
+        </ListView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/recipesNotFoundLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="312dp"
+            android:layout_height="wrap_content"
+            android:text="@string/no_recipes_text"
+            android:textAlignment="center">
+
+        </TextView>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addRecipeFAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:contentDescription="@string/add_new_recipe_desc"
+        android:src="@android:drawable/ic_menu_edit"
+        app:backgroundTint="#FFCDD2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+</androidx.constraintlayout.widget.ConstraintLayout>
