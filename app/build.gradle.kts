@@ -4,15 +4,15 @@ plugins {
 }
 
 android {
-    namespace = "com.dmitryh2004Corp.KitchenRecipes"
+    namespace = "com.example.KitchenRecipes"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.dmitryh2004Corp.KitchenRecipes"
-        minSdk = 24
+        applicationId = "com.example.KitchenRecipes"
+        minSdk = 26
         targetSdk = 34
         versionCode = 1
-        versionName = "1.0"
+        versionName = "beta 0.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Поваренная книга</string>
+    <string name="app_name">Чё на ужин?</string>
     <string name="saved_recipes_text">Сохраненные рецепты</string>
     <string name="no_recipes_text">Не удалось найти сохраненные рецепты на вашем устройстве. Создайте новый рецепт или скачайте его из базы данных рецептов (требуется вход в профиль).</string>
     <string name="add_new_recipe_desc">Add new recipe</string>
@@ -22,4 +22,12 @@
     <string name="image_set_error">Ошибка при загрузке изображения</string>
     <string name="dinner_category_text">Категория ужинов</string>
     <string name="dinner_category_hint">Категория (по желанию)</string>
+    <string name="settings_title">Настройки</string>
+    <string name="theme_settings_title">Цветовая гамма</string>
+    <string name="needs_restart_to_apply">Измененные настройки будут применены при следующем запуске приложения.\n\nПри изменении настроек необходимо перезапустить приложение через кнопку \"Перезапуск\".</string>
+    <string name="light_mode">Светлая тема</string>
+    <string name="dark_mode">Темная тема</string>
+    <string name="system_mode">Системная тема (по умолчанию)</string>
+    <string name="theme_radio_title_text">Тема приложения (в разработке)</string>
+    <string name="restart">Перезапуск</string>
 </resources>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+    <TextView
+        android:id="@+id/settings_title"
+        android:text="@string/settings_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/themeLayoutTitle"
+        android:text="@string/theme_settings_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_title"
+        android:layout_marginTop="25dp">
+
+    </TextView>
+    <TableLayout
+        android:id="@+id/themeLayout"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/themeLayoutTitle">
+        <TableRow>
+            <Button
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/material_theme_red_primary"
+                android:id="@+id/redThemeBtn">
+
+            </Button>
+            <Button
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/material_theme_purple_primary"
+                android:id="@+id/purpleThemeBtn">
+
+            </Button>
+            <Button
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/material_theme_blue_primary"
+                android:id="@+id/blueThemeBtn">
+
+            </Button>
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/themeRadioTitle"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/themeLayout"
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/theme_radio_title_text">
+
+    </TextView>
+    <RadioGroup
+        android:id="@+id/themeRadio"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/themeRadioTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/radioBtnLight"
+            android:text="@string/light_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false">
+
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/radioBtnDark"
+            android:text="@string/dark_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false">
+
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/radioBtnSystem"
+            android:text="@string/system_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:enabled="false">
+
+        </RadioButton>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/restartWarning"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/themeRadio"
+        android:layout_marginTop="25dp"
+        android:layout_width="312dp"
+        android:layout_height="wrap_content"
+        android:text="@string/needs_restart_to_apply">
+
+    </TextView>
+    <Button
+        android:id="@+id/restartBtn"
+        app:layout_constraintTop_toBottomOf="@id/restartWarning"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="25dp"
+        android:text="@string/restart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="false">
+
+    </Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

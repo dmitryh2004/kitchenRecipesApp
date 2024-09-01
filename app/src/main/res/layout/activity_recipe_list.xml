@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".RecipeListActivity">
+    tools:context="com.example.KitchenRecipes.RecipeListActivity">
     <LinearLayout
         android:id="@+id/recipeListLayout"
         android:layout_width="match_parent"
@@ -54,7 +54,6 @@
         android:layout_margin="16dp"
         android:contentDescription="@string/add_new_recipe_desc"
         android:src="@android:drawable/ic_menu_edit"
-        app:backgroundTint="#FFCDD2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 

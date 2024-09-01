@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DinnerListFragment">
+    tools:context="com.example.KitchenRecipes.DinnerListFragment">
 
     <LinearLayout
         android:id="@+id/dinnerListLayout"
@@ -26,7 +26,7 @@
             android:layout_width="312dp"
             android:layout_height="wrap_content"
             android:indicatorStart="?android:attr/expandableListPreferredItemIndicatorLeft"
-            android:divider="@color/material_theme_red_primary"
+            android:divider="#000"
             android:dividerHeight="1dp">
 
         </ExpandableListView>
@@ -50,6 +50,28 @@
 
         </TextView>
     </LinearLayout>
+    <LinearLayout
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/uploadDinnersBtn"
+            android:text="Выгрузка"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </Button>
+        <Button
+            android:layout_marginLeft="10dp"
+            android:id="@+id/downloadDinnersBtn"
+            android:text="Загрузка"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </Button>
+    </LinearLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/addDinnerFAB"
@@ -58,7 +80,6 @@
         android:layout_margin="16dp"
         android:contentDescription="@string/add_new_dinner_desc"
         android:src="@android:drawable/ic_menu_edit"
-        app:backgroundTint="#FFCDD2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
